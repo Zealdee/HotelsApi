@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace HotelsApi.Entities;
+﻿namespace HotelsApi.Entities;
 
 public partial class Hotel
 {

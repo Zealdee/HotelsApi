@@ -264,3 +264,4 @@ C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\refint\HotelsApi
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.pdb
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.genruntimeconfig.cache
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\ref\HotelsApi.dll
+C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.sourcelink.json

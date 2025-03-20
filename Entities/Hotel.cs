@@ -12,4 +12,10 @@ public partial class Hotel
     public string HotelName { get; set; } = null!;
 
     public string HotelDescription { get; set; } = null!;
+
+    public int? BarangayId { get; set; }
+
+    public virtual Barangay? Barangay { get; set; }
+
+    public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 }

@@ -10,4 +10,8 @@ public partial class Country
     public int CountryCode { get; set; }
 
     public string CountryName { get; set; } = null!;
+
+    public virtual ICollection<Barangay> Barangays { get; set; } = new List<Barangay>();
+
+    public virtual ICollection<State> States { get; set; } = new List<State>();
 }

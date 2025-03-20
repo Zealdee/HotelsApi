@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapperProfiles\" />
     <Folder Include="Services\" />
     <Folder Include="Validators\" />
     <Folder Include="Repositories\" />

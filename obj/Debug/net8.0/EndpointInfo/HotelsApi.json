@@ -5,94 +5,51 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Barangays": {
+    "/api/Barangay": {
       "get": {
         "tags": [
-          "Barangays"
+          "Barangay"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Barangay"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Barangay"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Barangay"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "Barangays"
+          "Barangay"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/CreateBarangay"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/CreateBarangay"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/CreateBarangay"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Barangays/{id}": {
+    "/api/Barangay/{id}": {
       "get": {
         "tags": [
-          "Barangays"
+          "Barangay"
         ],
         "parameters": [
           {
@@ -107,30 +64,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "Barangays"
+          "Barangay"
         ],
         "parameters": [
           {
@@ -147,47 +87,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/UpdateBarangay"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/UpdateBarangay"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Barangay"
+                "$ref": "#/components/schemas/UpdateBarangay"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Barangay"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "delete": {
         "tags": [
-          "Barangays"
+          "Barangay"
         ],
         "parameters": [
           {
@@ -202,116 +125,56 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Cities": {
+    "/api/City": {
       "get": {
         "tags": [
-          "Cities"
+          "City"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/City"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/City"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/City"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "Cities"
+          "City"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCity"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCity"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/CreateCity"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Cities/{id}": {
+    "/api/City/{id}": {
       "get": {
         "tags": [
-          "Cities"
+          "City"
         ],
         "parameters": [
           {
@@ -326,30 +189,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "Cities"
+          "City"
         ],
         "parameters": [
           {
@@ -366,47 +212,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCity"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCity"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/City"
+                "$ref": "#/components/schemas/UpdateCity"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/City"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "delete": {
         "tags": [
-          "Cities"
+          "City"
         ],
         "parameters": [
           {
@@ -421,116 +250,56 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Countries": {
+    "/api/Country": {
       "get": {
         "tags": [
-          "Countries"
+          "Country"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Country"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Country"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Country"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "Countries"
+          "Country"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountry"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountry"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/CreateCountry"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/Countries/{id}": {
+    "/api/Country/{id}": {
       "get": {
         "tags": [
-          "Countries"
+          "Country"
         ],
         "parameters": [
           {
@@ -545,30 +314,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "Countries"
+          "Country"
         ],
         "parameters": [
           {
@@ -585,47 +337,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCountry"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCountry"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Country"
+                "$ref": "#/components/schemas/UpdateCountry"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "delete": {
         "tags": [
-          "Countries"
+          "Country"
         ],
         "parameters": [
           {
@@ -640,62 +375,19 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/Hotel": {
+    "/api/Hotel": {
       "get": {
         "tags": [
           "Hotel"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Hotel"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Hotel"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Hotel"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -707,46 +399,29 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/CreateHotel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/CreateHotel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/CreateHotel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/Hotel/{id}": {
+    "/api/Hotel/{id}": {
       "get": {
         "tags": [
           "Hotel"
@@ -764,24 +439,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -804,41 +462,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/UpdateHotel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/UpdateHotel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Hotel"
+                "$ref": "#/components/schemas/UpdateHotel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Hotel"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -859,116 +500,56 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/States": {
+    "/api/State": {
       "get": {
         "tags": [
-          "States"
+          "State"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/State"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/State"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/State"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "States"
+          "State"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/CreateState"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/CreateState"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/CreateState"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/States/{id}": {
+    "/api/State/{id}": {
       "get": {
         "tags": [
-          "States"
+          "State"
         ],
         "parameters": [
           {
@@ -983,30 +564,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "States"
+          "State"
         ],
         "parameters": [
           {
@@ -1023,47 +587,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/UpdateState"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/UpdateState"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/State"
+                "$ref": "#/components/schemas/UpdateState"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/State"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "delete": {
         "tags": [
-          "States"
+          "State"
         ],
         "parameters": [
           {
@@ -1078,24 +625,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -1103,13 +633,9 @@
   },
   "components": {
     "schemas": {
-      "Barangay": {
+      "CreateBarangay": {
         "type": "object",
         "properties": {
-          "barangayId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "barangayName": {
             "type": "string",
             "nullable": true
@@ -1117,17 +643,17 @@
           "postalCode": {
             "type": "integer",
             "format": "int32"
+          },
+          "countryId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "City": {
+      "CreateCity": {
         "type": "object",
         "properties": {
-          "cityId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "cityCode": {
             "type": "integer",
             "format": "int32",
@@ -1136,17 +662,18 @@
           "cityName": {
             "type": "string",
             "nullable": true
+          },
+          "stateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Country": {
+      "CreateCountry": {
         "type": "object",
         "properties": {
-          "countryId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "countryCode": {
             "type": "integer",
             "format": "int32"
@@ -1158,13 +685,9 @@
         },
         "additionalProperties": false
       },
-      "Hotel": {
+      "CreateHotel": {
         "type": "object",
         "properties": {
-          "hotelId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "hotelCode": {
             "type": "integer",
             "format": "int32"
@@ -1176,17 +699,18 @@
           "hotelDescription": {
             "type": "string",
             "nullable": true
+          },
+          "barangayId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "State": {
+      "CreateState": {
         "type": "object",
         "properties": {
-          "stateId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "stateCode": {
             "type": "integer",
             "format": "int32",
@@ -1195,6 +719,126 @@
           "stateName": {
             "type": "string",
             "nullable": true
+          },
+          "countryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateBarangay": {
+        "type": "object",
+        "properties": {
+          "barangayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "countryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "barangayId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCity": {
+        "type": "object",
+        "properties": {
+          "cityCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cityName": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cityId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCountry": {
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "countryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateHotel": {
+        "type": "object",
+        "properties": {
+          "hotelCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hotelName": {
+            "type": "string",
+            "nullable": true
+          },
+          "hotelDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "barangayId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hotelId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateState": {
+        "type": "object",
+        "properties": {
+          "stateCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "stateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "stateId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

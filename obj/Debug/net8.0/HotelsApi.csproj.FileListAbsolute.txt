@@ -7,8 +7,10 @@ C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\HotelsApi.runtim
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\HotelsApi.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\HotelsApi.pdb
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\Humanizer.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -247,6 +249,7 @@ C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.Assemb
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.csproj.CoreCompileInputs.cache
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.sourcelink.json
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\scopedcss\bundle\HotelsApi.styles.css
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\staticwebassets.development.json
@@ -264,4 +267,3 @@ C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\refint\HotelsApi
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.pdb
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.genruntimeconfig.cache
 C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\ref\HotelsApi.dll
-C:\Users\glen\source\repos\HotelsApi\HotelsApi\obj\Debug\net8.0\HotelsApi.sourcelink.json

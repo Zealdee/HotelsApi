@@ -1,54 +1,34 @@
 [
   {
-    "ContainingType": "HotelsApi.Controllers.BarangaysController",
+    "ContainingType": "HotelsApi.Controllers.BarangayController",
     "Method": "GetAllBarangays",
-    "RelativePath": "api/Barangays",
+    "RelativePath": "api/Barangay",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[HotelsApi.Entities.Barangay, HotelsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.BarangaysController",
+    "ContainingType": "HotelsApi.Controllers.BarangayController",
     "Method": "CreateBarangay",
-    "RelativePath": "api/Barangays",
+    "RelativePath": "api/Barangay",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "barangay",
-        "Type": "HotelsApi.Entities.Barangay",
+        "Type": "HotelsApi.Dtos.CreateBarangay",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Barangay",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.BarangaysController",
+    "ContainingType": "HotelsApi.Controllers.BarangayController",
     "Method": "GetBarangayById",
-    "RelativePath": "api/Barangays/{id}",
+    "RelativePath": "api/Barangay/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -59,22 +39,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Barangay",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.BarangaysController",
+    "ContainingType": "HotelsApi.Controllers.BarangayController",
     "Method": "UpdateBarangay",
-    "RelativePath": "api/Barangays/{id}",
+    "RelativePath": "api/Barangay/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -86,26 +56,16 @@
       },
       {
         "Name": "barangay",
-        "Type": "HotelsApi.Entities.Barangay",
+        "Type": "HotelsApi.Dtos.UpdateBarangay",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Barangay",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.BarangaysController",
+    "ContainingType": "HotelsApi.Controllers.BarangayController",
     "Method": "DeleteBarangay",
-    "RelativePath": "api/Barangays/{id}",
+    "RelativePath": "api/Barangay/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -116,68 +76,38 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CitiesController",
+    "ContainingType": "HotelsApi.Controllers.CityController",
     "Method": "GetAllCities",
-    "RelativePath": "api/Cities",
+    "RelativePath": "api/City",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[HotelsApi.Entities.City, HotelsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CitiesController",
+    "ContainingType": "HotelsApi.Controllers.CityController",
     "Method": "CreateCity",
-    "RelativePath": "api/Cities",
+    "RelativePath": "api/City",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "city",
-        "Type": "HotelsApi.Entities.City",
+        "Type": "HotelsApi.Dtos.CreateCity",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.City",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CitiesController",
+    "ContainingType": "HotelsApi.Controllers.CityController",
     "Method": "GetCityById",
-    "RelativePath": "api/Cities/{id}",
+    "RelativePath": "api/City/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -188,22 +118,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.City",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CitiesController",
+    "ContainingType": "HotelsApi.Controllers.CityController",
     "Method": "UpdateCity",
-    "RelativePath": "api/Cities/{id}",
+    "RelativePath": "api/City/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -215,26 +135,16 @@
       },
       {
         "Name": "city",
-        "Type": "HotelsApi.Entities.City",
+        "Type": "HotelsApi.Dtos.UpdateCity",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.City",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CitiesController",
+    "ContainingType": "HotelsApi.Controllers.CityController",
     "Method": "DeleteCity",
-    "RelativePath": "api/Cities/{id}",
+    "RelativePath": "api/City/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -245,68 +155,38 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CountriesController",
+    "ContainingType": "HotelsApi.Controllers.CountryController",
     "Method": "GetAllCountries",
-    "RelativePath": "api/Countries",
+    "RelativePath": "api/Country",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[HotelsApi.Entities.Country, HotelsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CountriesController",
+    "ContainingType": "HotelsApi.Controllers.CountryController",
     "Method": "CreateCountry",
-    "RelativePath": "api/Countries",
+    "RelativePath": "api/Country",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "country",
-        "Type": "HotelsApi.Entities.Country",
+        "Type": "HotelsApi.Dtos.CreateCountry",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Country",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CountriesController",
+    "ContainingType": "HotelsApi.Controllers.CountryController",
     "Method": "GetCountryById",
-    "RelativePath": "api/Countries/{id}",
+    "RelativePath": "api/Country/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -317,22 +197,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Country",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CountriesController",
+    "ContainingType": "HotelsApi.Controllers.CountryController",
     "Method": "UpdateCountry",
-    "RelativePath": "api/Countries/{id}",
+    "RelativePath": "api/Country/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -344,26 +214,16 @@
       },
       {
         "Name": "country",
-        "Type": "HotelsApi.Entities.Country",
+        "Type": "HotelsApi.Dtos.UpdateCountry",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Country",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "HotelsApi.Controllers.CountriesController",
+    "ContainingType": "HotelsApi.Controllers.CountryController",
     "Method": "DeleteCountry",
-    "RelativePath": "api/Countries/{id}",
+    "RelativePath": "api/Country/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -374,197 +234,38 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HotelsApi.Controllers.StatesController",
-    "Method": "GetAllStates",
-    "RelativePath": "api/States",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[HotelsApi.Entities.State, HotelsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HotelsApi.Controllers.StatesController",
-    "Method": "CreateState",
-    "RelativePath": "api/States",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "state",
-        "Type": "HotelsApi.Entities.State",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.State",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HotelsApi.Controllers.StatesController",
-    "Method": "GetStateById",
-    "RelativePath": "api/States/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.State",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HotelsApi.Controllers.StatesController",
-    "Method": "UpdateState",
-    "RelativePath": "api/States/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "state",
-        "Type": "HotelsApi.Entities.State",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.State",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "HotelsApi.Controllers.StatesController",
-    "Method": "DeleteState",
-    "RelativePath": "api/States/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HotelsApi.Controllers.HotelController",
     "Method": "GetAllHotels",
-    "RelativePath": "Hotel",
+    "RelativePath": "api/Hotel",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[HotelsApi.Entities.Hotel, HotelsApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HotelsApi.Controllers.HotelController",
     "Method": "CreateHotel",
-    "RelativePath": "Hotel",
+    "RelativePath": "api/Hotel",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "hotel",
-        "Type": "HotelsApi.Entities.Hotel",
+        "Type": "HotelsApi.Dtos.CreateHotel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Hotel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HotelsApi.Controllers.HotelController",
     "Method": "GetHotelById",
-    "RelativePath": "Hotel/{id}",
+    "RelativePath": "api/Hotel/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -575,22 +276,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Hotel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HotelsApi.Controllers.HotelController",
     "Method": "UpdateHotel",
-    "RelativePath": "Hotel/{id}",
+    "RelativePath": "api/Hotel/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -602,26 +293,16 @@
       },
       {
         "Name": "hotel",
-        "Type": "HotelsApi.Entities.Hotel",
+        "Type": "HotelsApi.Dtos.UpdateHotel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "HotelsApi.Entities.Hotel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "HotelsApi.Controllers.HotelController",
     "Method": "DeleteHotel",
-    "RelativePath": "Hotel/{id}",
+    "RelativePath": "api/Hotel/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -632,16 +313,85 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelsApi.Controllers.StateController",
+    "Method": "GetAllStates",
+    "RelativePath": "api/State",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelsApi.Controllers.StateController",
+    "Method": "CreateState",
+    "RelativePath": "api/State",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "state",
+        "Type": "HotelsApi.Dtos.CreateState",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelsApi.Controllers.StateController",
+    "Method": "GetStateById",
+    "RelativePath": "api/State/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelsApi.Controllers.StateController",
+    "Method": "UpdateState",
+    "RelativePath": "api/State/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "state",
+        "Type": "HotelsApi.Dtos.UpdateState",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelsApi.Controllers.StateController",
+    "Method": "DeleteState",
+    "RelativePath": "api/State/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

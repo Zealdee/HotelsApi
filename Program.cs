@@ -1,5 +1,7 @@
 using HotelsApi.Context;
 using Microsoft.EntityFrameworkCore;
+using HotelsApi.Repositories;
+using HotelsApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Auto Mapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+// Services
+builder.Services.AddScoped<IHotelService, HotelService>();
+builder.Services.AddScoped<IBarangayService, BarangayService>();
+builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<IStateService, StateService>();
+
+// Repositories
+builder.Services.AddScoped<IHotelRepository, HotelRepository>();
+builder.Services.AddScoped<IBarangayRepository, BarangayRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+builder.Services.AddScoped<IStateRepository, StateRepository>();
 
 // Database Configuration
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));

@@ -14,9 +14,9 @@ namespace HotelsApi.Dtos
     }
     public class UpdateHotel: CreateHotel
     {
-        public int Id { get; set; }
+        public int HotelId { get; set; }
     }
-    public class GetHotel
+    public class GetHotelName
     {
         public int HotelId { get; set; }
 

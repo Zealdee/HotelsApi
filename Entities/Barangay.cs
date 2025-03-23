@@ -11,9 +11,9 @@ public partial class Barangay
 
     public int PostalCode { get; set; }
 
-    public int CountryId { get; set; }
+    public int? CountryId { get; set; }
 
-    public virtual Country Country { get; set; } = null!;
+    public virtual Country? Country { get; set; }
 
     public virtual ICollection<Hotel> Hotels { get; set; } = new List<Hotel>();
 }

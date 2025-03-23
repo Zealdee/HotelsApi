@@ -10,7 +10,7 @@ namespace HotelsApi.AutoMapperProfiles
         {
             CreateMap<CreateBarangay, Barangay>();
             CreateMap<UpdateBarangay, Barangay>();
-            CreateMap<Barangay, GetBarangay>();
+            CreateMap<Barangay, GetBarangayName>();
         }
     }
 }

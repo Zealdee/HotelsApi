@@ -17,7 +17,7 @@ public partial class Transaction
 
     public DateTime DateTo { get; set; }
 
-    public string FullNamer { get; set; } = null!;
+    public string FullName { get; set; } = null!;
 
     public int PhoneNumber { get; set; }
 

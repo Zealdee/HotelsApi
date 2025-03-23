@@ -12,7 +12,7 @@
 
         public DateTime DateTo { get; set; }
 
-        public string FullNamer { get; set; } = null!;
+        public string FullName { get; set; } = null!;
 
         public int PhoneNumber { get; set; }
 
@@ -22,7 +22,7 @@
     {
         public int TransactionId { get; set; }
     }
-    public class GetTransaction
+    public class GetTransactionName
     {
         public int TransactionId { get; set; }
 
@@ -36,7 +36,7 @@
 
         public DateTime DateTo { get; set; }
 
-        public string FullNamer { get; set; } = null!;
+        public string FullName { get; set; } = null!;
 
         public int PhoneNumber { get; set; }
 

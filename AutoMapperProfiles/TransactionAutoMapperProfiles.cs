@@ -10,7 +10,7 @@ namespace HotelsApi.AutoMapperProfiles
         {
             CreateMap<CreateTransaction, Transaction>();
             CreateMap<UpdateTransaction, Transaction>();
-            CreateMap<Transaction, GetTransaction>();
+            CreateMap<Transaction, GetTransactionName>();
         }
     }
 }

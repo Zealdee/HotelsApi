@@ -11,7 +11,7 @@ namespace HotelsApi.AutoMapperProfiles
         {
             CreateMap<CreateCountry, Country>();
             CreateMap<UpdateCountry, Country>();
-            CreateMap<Country, GetCountry>();
+            CreateMap<Country, GetCountryName>();
         }
     }
 }

@@ -12,7 +12,7 @@
     {
         public int BarangayId { get; set; }
     }
-    public class GetBarangay
+    public class GetBarangayName
     {
             public int BarangayId { get; set; }
 

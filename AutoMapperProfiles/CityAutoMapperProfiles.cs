@@ -10,7 +10,7 @@ namespace HotelsApi.AutoMapperProfiles
         {
             CreateMap<CreateCity, City>();
             CreateMap<UpdateCity, City>();
-            CreateMap<City, GetCity>();
+            CreateMap<City, GetCityName>();
         }
     }
 }

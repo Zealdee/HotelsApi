@@ -10,7 +10,7 @@
     {
         public int CountryId { get; set; }
     }
-    public class GetCountry
+    public class GetCountryName
     {
         public int CountryId { get; set; }
 

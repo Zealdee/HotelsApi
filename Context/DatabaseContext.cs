@@ -56,6 +56,7 @@ public partial class DatabaseContext : DbContext
 
             entity.HasOne(d => d.Country).WithMany(p => p.Barangays)
                 .HasForeignKey(d => d.CountryId)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("Barangay_Country_FK");
         });
 
@@ -156,9 +157,9 @@ public partial class DatabaseContext : DbContext
             entity.Property(e => e.EmailAddress)
                 .HasMaxLength(255)
                 .HasColumnName("emailAddress");
-            entity.Property(e => e.FullNamer)
+            entity.Property(e => e.FullName)
                 .HasMaxLength(255)
-                .HasColumnName("fullNamer");
+                .HasColumnName("fullName");
             entity.Property(e => e.HotelCode)
                 .HasMaxLength(255)
                 .HasColumnName("hotelCode");

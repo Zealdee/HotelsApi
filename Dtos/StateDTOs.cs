@@ -12,7 +12,7 @@
     {
         public int StateId { get; set; }
     }
-    public class GetState
+    public class GetStateName
     {
         public int StateId { get; set; }
 

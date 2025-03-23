@@ -12,7 +12,7 @@
     {
         public int CityId { get; set; }
     }
-    public class GetCity
+    public class GetCityName
     {
         public int CityId { get; set; }
 

@@ -1,82 +1,71 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HotelsApi.Context;
-using HotelsApi.Entities;
+using HotelsApi.Services;
+using HotelsApi.Dtos;
+using HotelsApi.Repositories;
 
 namespace HotelsApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CitiesController : ControllerBase
+    public class CityController : ControllerBase
     {
-        private readonly DatabaseContext databaseContext;
+        private readonly ICityService cityService;
 
-        public CitiesController(DatabaseContext databaseContext)
+        public CityController(ICityService cityService)
         {
-            this.databaseContext = databaseContext;
+            this.cityService = cityService;
         }
 
         [HttpGet()]
-        public async Task<List<City>> GetAllCities()
+        public async Task<IActionResult> GetAllCities()
         {
-            var city = await databaseContext.Cities.ToListAsync();
+            var citys = await cityService.GetAllCities();
 
-            return city;
+            return Ok(citys);
         }
 
         [HttpGet("{id}")]
-        public async Task<City?> GetCityById([FromRoute] int id)
+        public async Task<IActionResult> GetCityById([FromRoute] int id)
         {
-            var city = await databaseContext.Cities.FirstOrDefaultAsync(x => x.CityId == id);
+            var city = await cityService.GetCityById(id);
+            if (city == null)
+                return NotFound();
 
-            return city;
+            return Ok(city);
         }
 
         [HttpPost()]
-        public async Task<City> CreateCity([FromBody] City city)
+        public async Task<IActionResult> CreateCity([FromBody] CreateCity city)
         {
-            databaseContext.Cities.Add(city);
-            await databaseContext.SaveChangesAsync();
+            var createdCityd = await cityService.CreateCity(city);
 
-            return city;
+            if (createdCityd == null)
+                return BadRequest();
+
+            return Ok(createdCityd);
         }
 
         [HttpPut("{id}")]
-        public async Task<City?> UpdateCity([FromRoute] int id, [FromBody] City city)
+        public async Task<IActionResult> UpdateCity([FromRoute] int id, [FromBody] UpdateCity city)
         {
+            var updateCityResult = await cityService.UpdateCity(id, city);
 
-            var cityRecord = await databaseContext.Cities.FirstOrDefaultAsync(x => x.CityId == id);
+            if (updateCityResult == null)
+                return BadRequest();
 
-            if (cityRecord == null)
-            {
-                return null;
-            }
-
-            cityRecord.CityName = city.CityName;
-            cityRecord.CityCode = city.CityCode;
-
-            await databaseContext.SaveChangesAsync();
-
-            return cityRecord;
+            return Ok(updateCityResult);
         }
 
         [HttpDelete("{id}")]
-        public async Task<bool> DeleteCity([FromRoute] int id)
+        public async Task<IActionResult> DeleteCity([FromRoute] int id)
         {
-            var cityRecord = await databaseContext.Cities.FirstOrDefaultAsync(x => x.CityId == id);
+            var deleteResult = await cityService.DeleteCity(id);
+            if (deleteResult == false)
+                return BadRequest();
 
-            if (cityRecord == null)
-            {
-                return false;
-            }
-
-            databaseContext.Cities.Remove(cityRecord);
-
-            await databaseContext.SaveChangesAsync();
-
-            return true;
-
+            return Ok(deleteResult);
         }
     }
 }

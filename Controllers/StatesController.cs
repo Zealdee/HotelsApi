@@ -1,82 +1,70 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HotelsApi.Context;
-using HotelsApi.Entities;
+using HotelsApi.Services;
+using HotelsApi.Dtos;
 
 namespace HotelsApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StatesController : ControllerBase
+    public class StateController : ControllerBase
     {
-        private readonly DatabaseContext databaseContext;
+        private readonly IStateService stateService;
 
-        public StatesController(DatabaseContext databaseContext)
+        public StateController(IStateService stateService)
         {
-            this.databaseContext = databaseContext;
+            this.stateService = stateService;
         }
 
         [HttpGet()]
-        public async Task<List<State>> GetAllStates()
+        public async Task<IActionResult> GetAllStates()
         {
-            var state = await databaseContext.States.ToListAsync();
+            var states = await stateService.GetAllStates();
 
-            return state;
+            return Ok(states);
         }
 
         [HttpGet("{id}")]
-        public async Task<State?> GetStateById([FromRoute] int id)
+        public async Task<IActionResult> GetStateById([FromRoute] int id)
         {
-            var state = await databaseContext.States.FirstOrDefaultAsync(x => x.StateId == id);
+            var state = await stateService.GetStateById(id);
+            if (state == null)
+                return NotFound();
 
-            return state;
+            return Ok(state);
         }
 
         [HttpPost()]
-        public async Task<State> CreateState([FromBody] State state)
+        public async Task<IActionResult> CreateState([FromBody] CreateState state)
         {
-            databaseContext.States.Add(state);
-            await databaseContext.SaveChangesAsync();
+            var createdStated = await stateService.CreateState(state);
 
-            return state;
+            if (createdStated == null)
+                return BadRequest();
+
+            return Ok(createdStated);
         }
 
         [HttpPut("{id}")]
-        public async Task<State?> UpdateState([FromRoute] int id, [FromBody] State state)
+        public async Task<IActionResult> UpdateState([FromRoute] int id, [FromBody] UpdateState state)
         {
+            var updateStateResult = await stateService.UpdateState(id, state);
 
-            var stateRecord = await databaseContext.States.FirstOrDefaultAsync(x => x.StateId == id);
+            if (updateStateResult == null)
+                return BadRequest();
 
-            if (stateRecord == null)
-            {
-                return null;
-            }
-
-            stateRecord.StateName = state.StateName;
-            stateRecord.StateCode = state.StateCode;
-
-            await databaseContext.SaveChangesAsync();
-
-            return stateRecord;
+            return Ok(updateStateResult);
         }
 
         [HttpDelete("{id}")]
-        public async Task<bool> DeleteState([FromRoute] int id)
+        public async Task<IActionResult> DeleteState([FromRoute] int id)
         {
-            var stateRecord = await databaseContext.States.FirstOrDefaultAsync(x => x.StateId == id);
+            var deleteResult = await stateService.DeleteState(id);
+            if (deleteResult == false)
+                return BadRequest();
 
-            if (stateRecord == null)
-            {
-                return false;
-            }
-
-            databaseContext.States.Remove(stateRecord);
-
-            await databaseContext.SaveChangesAsync();
-
-            return true;
-
+            return Ok(deleteResult);
         }
     }
 }

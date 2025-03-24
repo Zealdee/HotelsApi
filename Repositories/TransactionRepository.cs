@@ -13,6 +13,7 @@ namespace HotelsApi.Repositories
         Task<Transaction?> UpdateTransaction(int id, Transaction transaction);
         Task<bool> DeleteTransaction(int id);
         Task<Transaction?> GetTransactionName(string transactionName);
+        Task<Transaction?> GetTransactionNumber(int transactionNumber);
 
     }
     public class TransactionRepository : ITransactionRepository
@@ -58,6 +59,7 @@ namespace HotelsApi.Repositories
             transactionRecord.DateTo = transaction.DateTo;
             transactionRecord.DateFrom = transaction.DateFrom;
             transactionRecord.FullName = transaction.FullName;
+            transactionRecord.PhoneNumber = transaction.PhoneNumber;
             transactionRecord.EmailAddress = transaction.EmailAddress;
 
             await databaseContext.SaveChangesAsync();
@@ -84,6 +86,13 @@ namespace HotelsApi.Repositories
         public async Task<Transaction?> GetTransactionName(string transactionName)
         {
             Transaction? transaction = await databaseContext.Transactions.FirstOrDefaultAsync(x => x.FullName == transactionName);
+
+            return transaction;
+        }
+
+        public async Task<Transaction?> GetTransactionNumber(int transactionNumber)
+        {
+            Transaction? transaction = await databaseContext.Transactions.FirstOrDefaultAsync(x => x.PhoneNumber == transactionNumber);
 
             return transaction;
         }

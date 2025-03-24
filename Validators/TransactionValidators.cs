@@ -41,6 +41,13 @@ namespace HotelsApi.Validators
                 .WithMessage("{PropertyName} must not be null test here")
                 .Must(FullName => transactionRepository.GetTransactionName(FullName).Result == null)
                 .WithMessage("{PropertyName} already exists.");
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty()
+                .WithMessage("must not be empty here")
+                .NotNull()
+                .WithMessage("{PropertyName} must not be null test here")
+                .Must(PhoneNumber => transactionRepository.GetTransactionNumber(PhoneNumber).Result == null)
+                .WithMessage("{PropertyName} already exists.");
             RuleFor(x => x.EmailAddress)
                 .NotEmpty()
                 .WithMessage("must not be empty here");
@@ -89,6 +96,13 @@ namespace HotelsApi.Validators
                 .NotNull()
                 .WithMessage("{PropertyName} must not be null test here")
                 .Must(FullName => transactionRepository.GetTransactionName(FullName).Result == null)
+                .WithMessage("{PropertyName} already exists.");
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty()
+                .WithMessage("must not be empty here")
+                .NotNull()
+                .WithMessage("{PropertyName} must not be null test here")
+                .Must(PhoneNumber => transactionRepository.GetTransactionNumber(PhoneNumber).Result == null)
                 .WithMessage("{PropertyName} already exists.");
             RuleFor(x => x.EmailAddress)
                 .NotEmpty()
